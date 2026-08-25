@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rest_api_crud_operation/pages/add_update_product.dart';
 import 'package:rest_api_crud_operation/pages/products_pages.dart';
 
 void main() {
@@ -14,7 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Api CRUD Operation',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.green)),
+      theme: ThemeData(
+        colorScheme: .fromSeed(seedColor: Color.fromARGB(255, 3, 79, 117)),
+      ),
       home: ProductsPage(),
     );
   }

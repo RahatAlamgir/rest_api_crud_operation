@@ -14,11 +14,11 @@ class GridViewCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Color.fromARGB(255, 243, 242, 249),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: Colors.grey.shade200),
         boxShadow: [
-          BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 3)),
+          BoxShadow(color: Colors.black12, blurRadius: 4, offset: Offset(0, 3)),
         ],
       ),
       child: Column(
@@ -106,7 +106,7 @@ class GridViewCard extends StatelessWidget {
                             child: Icon(
                               Icons.edit_outlined,
                               size: 18,
-                              color: Colors.blueAccent,
+                              color: Color.fromARGB(255, 3, 79, 117),
                             ),
                           ),
                           SizedBox(width: 8),

@@ -45,14 +45,13 @@ class _AddUpdateProductState extends State<AddUpdateProduct> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           isUpdate ? "Update Product" : "Add Product",
           style: TextStyle(fontWeight: .w600),
         ),
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 247, 249, 255),
+        foregroundColor: Color.fromARGB(255, 3, 79, 117),
       ),
 
       body: Padding(
@@ -69,7 +68,7 @@ class _AddUpdateProductState extends State<AddUpdateProduct> {
                   width: double.infinity,
                   margin: const EdgeInsets.only(bottom: 12),
                   decoration: BoxDecoration(
-                    color: Colors.grey[100],
+                    color: Color.fromARGB(255, 243, 242, 249),
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(color: Colors.grey.shade300),
                   ),
@@ -79,7 +78,7 @@ class _AddUpdateProductState extends State<AddUpdateProduct> {
                           child: Image.network(
                             url,
                             fit: BoxFit.cover,
-                            errorBuilder: (_, __, ___) => const Column(
+                            errorBuilder: (_, _, _) => const Column(
                               mainAxisAlignment: .center,
                               children: [
                                 Icon(
@@ -201,7 +200,7 @@ class _AddUpdateProductState extends State<AddUpdateProduct> {
               height: 48,
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
+                  backgroundColor: Color.fromARGB(255, 3, 79, 117),
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),

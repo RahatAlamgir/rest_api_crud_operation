@@ -9,14 +9,14 @@ class ProductModel {
     if (json['data'] != null) {
       data = <Data>[];
       json['data'].forEach((v) {
-        data!.add(new Data.fromJson(v));
+        data!.add(Data.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['status'] = this.status;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['status'] = status;
     if (this.data != null) {
       data['data'] = this.data!.map((v) => v.toJson()).toList();
     }
@@ -54,14 +54,14 @@ class Data {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['_id'] = this.sId;
-    data['ProductName'] = this.productName;
-    data['ProductCode'] = this.productCode;
-    data['Img'] = this.img;
-    data['Qty'] = this.qty;
-    data['UnitPrice'] = this.unitPrice;
-    data['TotalPrice'] = this.totalPrice;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['_id'] = sId;
+    data['ProductName'] = productName;
+    data['ProductCode'] = productCode;
+    data['Img'] = img;
+    data['Qty'] = qty;
+    data['UnitPrice'] = unitPrice;
+    data['TotalPrice'] = totalPrice;
     return data;
   }
 }

@@ -3,3 +3,4 @@
 Flutter application using REST API and implement complete CRUD operations.
 
 
+![Screenshot](Screenshot/CRUD.png)

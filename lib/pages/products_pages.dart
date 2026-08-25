@@ -32,8 +32,8 @@ class _ProductsPageState extends State<ProductsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Products", style: TextStyle(fontWeight: .w600)),
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 247, 249, 255),
+        foregroundColor: Color.fromARGB(255, 3, 79, 117),
 
         actions: [
           IconButton(
@@ -82,7 +82,7 @@ class _ProductsPageState extends State<ProductsPage> {
 
           fetchData();
         },
-        backgroundColor: Colors.green,
+        backgroundColor: Color.fromARGB(255, 3, 79, 117),
         child: Icon(Icons.add, color: Colors.white),
       ),
     );
