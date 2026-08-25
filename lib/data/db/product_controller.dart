@@ -55,9 +55,9 @@ class ProductController {
     }
   }
 
-  Future<bool> updateProduct(Data data, String productID) async {
+  Future<bool> updateProduct(Data data) async {
     final response = await http.post(
-      Uri.parse(Urls.updateProduct(productID)),
+      Uri.parse(Urls.updateProduct(data.sId)),
 
       headers: {
         'Accept': 'application/json',
